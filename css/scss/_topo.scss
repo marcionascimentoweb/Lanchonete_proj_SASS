@@ -1,0 +1,15 @@
+.topo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    
+}
+
+.topo {
+    @include d(s){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+  }

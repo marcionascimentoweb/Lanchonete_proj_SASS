@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.total{
+    min-height: 100vh; //area total
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: white;
+    //background-image: linear-gradient(to right, $cor-primaria, $cor-primaria, $cor-neutra, $cor-neutra, $cor-neutra);
+}
+
+.titulo{
+    color: $cor-secundaria;
+    @include tipo-3(24);
+}

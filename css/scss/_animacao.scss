@@ -1,0 +1,96 @@
+.animacao{
+    animation: is-boucing 1s ease-in-out alternate infinite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    position: sticky;
+    z-index: 20;
+    padding-right: 50px;
+    bottom: -20px;
+}
+
+
+@keyframes is-boucing {
+    to {
+        transform: translateY(50px); 
+            filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    }
+    
+}
+
+.hamburguer {
+    padding-right: 50px;
+    margin-bottom: 100px;
+}
+
+.cachorro_quente{
+    padding-right: 50px;
+}
+
+.batata{
+    padding-right: 50px;
+    margin-bottom: 100px;
+}
+
+.sanduiche{
+    padding-right: 50px;
+}
+
+.pizza{
+    padding-right: 50px;
+    margin-bottom: 100px;
+}
+
+
+// dispositivo (m)
+.animacao {
+    @include d(m){
+        display: none;
+    }
+}
+
+
+// dispositivo (s)
+.animacao {
+    @include d(s){
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+// letras
+
+.produtos ul li{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+}
+
+// botão
+.btn{
+    animation: botaoSubir 2s ease-in-out;
+}
+
+@keyframes botaoSubir {
+    to {
+        transform: translateY(100px);
+    }
+}

@@ -1,0 +1,98 @@
+//Disposito Large (l)
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    background-color: $cor-secundaria;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .menu ul{
+      list-style: none;
+      display: flex;
+  }
+
+  .menu ul li a{
+      display: block;
+      padding: 20px;
+      @include tipo-3(25);
+      color: $cor-primaria;
+      text-decoration: none;
+      position: relative;
+  }
+
+  .menu ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      width: 0;
+      height: 0.2rem;
+      background-color: $cor-primaria;
+      transition: all 300ms ease-in-out;
+  }
+
+  .menu ul li a:hover::after {
+      width: 50%;
+      left: 25%;
+  }
+
+// dispositivo (m)
+
+.menu {
+  @include d(m){
+  padding: 10px;
+  }
+}
+
+.menu ul li a{
+  @include d(m){
+  display: inline-block;
+  padding: 10px;
+  @include tipo-3(10);
+  }
+}
+
+//dispositivo (s)
+
+.menu {
+  @include d(s){
+  text-align: center;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  }
+}
+
+.menu ul li a{
+  @include d(s){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+}
+
+.topo ul{
+  @include d(s){
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  color: wheat;
+  }
+}
+

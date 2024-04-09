@@ -1,0 +1,15 @@
+.desenvolvedor{
+    width: 100%;
+    height: 50px;
+    background-color: $cor-secundaria;
+    color: $cor-primaria;
+    @include tipo-3(25);
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+

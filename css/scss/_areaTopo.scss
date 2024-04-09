@@ -1,0 +1,15 @@
+.areaTopo{
+    max-width: 100%;
+    height: 100px;
+    background-color: $cor-secundaria;
+}
+
+.areaTopo{
+    @include d(s){
+    flex-direction: column;
+    justify-content: center;
+    background-color: $cor-secundaria;
+    width: 100%;
+    height: 100vh;
+    }
+  }

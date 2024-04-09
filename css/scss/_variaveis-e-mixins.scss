@@ -1,0 +1,49 @@
+//Cores
+$cor-primaria: #A02B2D;
+$cor-secundaria: #FFCC29;
+$cor-neutra: #FEFEFE;
+
+//Fontes
+$fonte-1: 'Bree Serif', serif;
+$fonte-2: 'Bungee';
+$fonte-3: 'Poppins', sans-serif;
+
+@function em($pixel, $contexto: 16){
+    @return $pixel / $contexto + em;
+}
+
+@mixin tipo-3($size) {
+    font-family: $fonte-3;
+    @if $size == 25 {
+        font-size: em(25);
+        line-height: em (30, 25);
+    }
+}
+
+@mixin botao1() {
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        border: none;
+        border-radius: 20px;
+        background-color: $cor-secundaria;
+        color: $cor-primaria;
+        font-family: $fonte-3;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+
+@mixin botao2() {
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        border: none;
+        border-radius: 20px;
+        background-color: $cor-primaria;
+        color: $cor-secundaria;
+        font-family: $fonte-3;
+        font-size: 20px;
+        font-weight: 700;
+}
+

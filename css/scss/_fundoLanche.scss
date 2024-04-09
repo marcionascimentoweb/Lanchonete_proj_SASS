@@ -1,0 +1,33 @@
+.fundoLanche {
+    width: 798px;
+    margin-left: 13px;
+    position: absolute;
+    z-index: 10;
+ }
+
+ .fundoLanche:hover {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    
+ }
+
+.fundoLanche {
+    @include d(l){
+    max-width: 100%;
+    box-sizing: border-box;
+    }
+}
+
+// dispositivo (m)
+.fundoLanche {
+    @include d(m){
+        display: none;
+    }
+}
+
+
+// dispositivo (s)
+.fundoLanche {
+    @include d(s){
+        display: none;
+    }
+}

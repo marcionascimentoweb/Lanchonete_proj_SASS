@@ -1,0 +1,21 @@
+.produtos{
+    font-family: $fonte-2;
+    color: $cor-secundaria;
+    font-size: 50px;
+    position: relative;
+    z-index: 15;
+    margin-left: 50px;
+}
+
+.produtos, ul, li{
+    line-height: 2;
+}
+
+.extra{
+    color: $cor-neutra;
+    margin-left: 80px;
+}
+
+.btn{
+@include botao1();
+}

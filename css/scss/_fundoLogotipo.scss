@@ -1,0 +1,22 @@
+.fundoLogotipo{
+    height: 100px;
+    z-index: 2;
+    position: absolute;
+}
+
+.fundoLogotipo {
+   @include d(m){
+    display: none;
+    }
+  }
+
+  .fundoLogotipo {
+   @include d(s){
+   display: none;
+    }
+  }
+
+  .fundoLogotipo:hover {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    
+ }
